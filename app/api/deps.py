@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 
 from app import repo, dao, models
 from app.security.security import ALGORITHM
-from app.app_config.setting import settings
+from app.config.setting import settings
 from app.db.connect import get_db
 
 reusable_oauth2 = OAuth2PasswordBearer(

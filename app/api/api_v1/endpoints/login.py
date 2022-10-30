@@ -8,7 +8,7 @@ from sqlalchemy.orm import Session
 from app import repo, models, dao
 from app.api import deps
 from app.security import security
-from app.app_config.setting import settings
+from app.config.setting import settings
 from app.utils.common_utils import (
     generate_password_reset_token,
     send_reset_password_email,

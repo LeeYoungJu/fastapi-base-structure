@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-from app.app_config.setting import settings
+from app.config.setting import settings
 
 
 def get_db_uri():
@@ -15,5 +15,3 @@ def get_db_uri():
 SQLALCHEMY_DATABASE_URI = get_db_uri()
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-Base = declarative_base()
